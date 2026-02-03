@@ -46,7 +46,7 @@ type burger = {
   numberOfPatty: number;
 };
 
-// return type must be object with keys  type or veg or nonVeg or numberOfPatty
+// return type must be object with keys - type or veg or nonVeg or numberOfPatty
 function receiveBurgerOrder(obj: any): obj is burger {
   return (
     typeof obj === "object" &&
