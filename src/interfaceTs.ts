@@ -8,6 +8,11 @@ function makeTea(order: order) {
   return `Serving ${order.type} tea with sugar level ${order.sugar} and strong is ${order.strong}`;
 }
 
+function maketeas(totalCups:number) : string {
+  return 'making ' + totalCups + ' cups of tea';
+}
+
+
 // class resto implements order {
 //   type = "car";
 //   strong = true;
@@ -40,7 +45,6 @@ type Config = {
     readonly appName : string // if try to re - assign
     version : number
 }
-
 
 const cfg : Config = {
     appName :  "myapp", // if you try to re - assign it will throw error 
